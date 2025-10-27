@@ -1,0 +1,159 @@
+<!--html;-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var boxOne = document.getElementsByClassName('box3')[0];
+            var boxTwo = document.getElementsByClassName('box3')[1];
+            var running = false;
+
+            window.toggleTransition = function() {
+                if(!running) { 
+                    boxOne.classList.add('horizTranslate');
+                    boxTwo.classList.add('horizTranslate');
+                } else {
+                    boxOne.classList.remove('horizTranslate'); 
+                    boxTwo.classList.remove('horizTranslate');
+                }  
+                running = !running;
+            }
+        });
+    </script>
+</head>
+<body>
+     <style>
+        @keyframes flashingColors {
+            0% { background: rgba(131, 0, 0, 0.637); }
+            15% { background: rgba(0, 131, 0, 0.637); }
+            35% { background: rgba(0, 0, 131, 0.637); }
+            45% { background: rgba(160, 6, 134, 0.637); }
+            50% { background: rgba(5, 70, 5, 0.966); }
+            65% { background: rgb(199, 49, 29); }
+            85% { background: rgb(255, 255, 0); }
+            100% { background: rgb(1, 26, 255); }
+        }
+
+        .box:hover {
+            animation: flashingColors 1s infinite;
+        }
+    </style>  
+  <button class='toggleButton' onclick='toggleTransition()'>Toggle</button>
+<p>
+        Hover over the GeeksforGeeks 
+        to run the animation.
+    </p>
+  <div class="wayoutside" style="width: 800px;">
+  <div class="outside"style="  display: inline-block;
+height: 300px;
+width: 300px;
+clip-path: circle(50% at 50% 50%);">
+    <div class="box2"style="height:150px ; line-height: 150px;"></div>
+    <div class="box" style="  position: relative;
+width: 300px;
+top:150px;
+height: 150px;
+font-size: 40px;
+text-align: center;
+left: 0px;
+top:0px;
+width: 500px;
+background: rgba(131, 0, 0, 0.637);
+border-style: solid;
+border-width: 5px;
+border-color: #20c20b94;
+overflow: hidden;">
+     <div class="box3" style="  background: rgb(0, 0, 0);
+margin-left: 10px;
+clip-path: circle(50% at 50% 50%);
+animation: geeks 5s infinite;
+animation-play-state: paused;
+margin-top: -20px;">
+    </div>
+    </div>
+  </div>
+      <div class="outside" style="  display: inline-block;
+height: 300px;
+width: 300px;
+clip-path: circle(50% at 50% 50%);">
+    <div class="box2" style="height:150px ; line-height: 150px;"></div>
+    <div class="box" style="  position: relative;
+width: 300px;
+top:150px;
+height: 150px;
+font-size: 40px;
+text-align: center;
+left: 0px;
+top:0px;
+width: 500px;
+background: rgba(131, 0, 0, 0.637);
+  border-style: solid;
+  border-width: 5px;
+  border-color: #20c20b94;
+  overflow: hidden;">
+     <div class="box3" style="  background: rgb(0, 0, 0);
+margin-left: 10px;
+clip-path: circle(50% at 50% 50%);
+animation: geeks 5s infinite;
+animation-play-state: paused;
+margin-top: -20px;">
+      </div>
+    </div>
+  </div>
+  </div>
+  
+</body>
+<body>
+  <button class='toggleButton' onclick='toggleTransition()'>Toggle</button>
+<p>
+        Hover over the GeeksforGeeks 
+        to run the animation.
+    </p>
+  <div class="wayoutside" style="width: 800px;">
+  <div class="outside"style="  display: inline-block;
+height: 300px;
+width: 300px;
+clip-path: circle(50% at 50% 50%);">
+
+    <div class="box" style="  position: relative;
+width: 300px;
+top:150px;
+height: 150px;
+font-size: 40px;
+text-align: center;
+left: 0px;
+top:0px;
+width: 500px;
+background: rgba(131, 0, 0, 0.637);
+border-style: solid;
+border-width: 5px;
+overflow: hidden;">
+    </div>
+  </div>
+      <div class="outside" style="  display: inline-block;
+height: 300px;
+width: 300px;
+clip-path: circle(50% at 50% 50%);">
+    <div class="box" style="  position: relative;
+width: 300px;
+top:150px;
+height: 150px;
+font-size: 40px;
+text-align: center;
+left: 0px;
+top:0px;
+width: 500px;
+background: rgba(131, 0, 0, 0.637);
+  border-style: solid;
+  border-width: 5px;
+
+  overflow: hidden;">
+    </div>
+  </div>
+  </div>
+  
+</body>
+</html>
