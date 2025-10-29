@@ -11,3 +11,20 @@ var toggleTransition = function() {
 
   running = !running;
 }
+
+
+
+
+var boxOne3 = document.getElementsByClassName('box3')[0];
+var running3 = false;
+
+var toggleTransition = function() {
+  if(!running3) 
+  { 
+    boxOne3.classList.add('horizTranslate');
+  } else {
+    boxOne3.classList.remove('horizTranslate'); 
+  }  
+
+  running3 = !running3;
+}
